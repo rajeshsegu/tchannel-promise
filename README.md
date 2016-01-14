@@ -15,13 +15,14 @@ var TchannelPromise = require('tchannel-promise');
 var tchannel = new TChannelPromise(options);
 var channel = tchannel.makeSubChannel({serviceName: 'test'});
 var promise = channel.request()
-    .send('echo', 'arg1', 'arg2')
+    .send('echo', 'arg1', 'arg2');
+    
+promise    
     .then(function success(result){
       // implement success
     }, function fail(err){
       // implement failure
-    })
-
+    });
 
 ```
 
