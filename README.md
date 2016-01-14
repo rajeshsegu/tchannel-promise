@@ -1,4 +1,4 @@
-# tchannel-promise [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][(https://coveralls.io/repos/rajeshsegu/tchannel-promise/badge.svg?branch=master&service=github)]](https://coveralls.io/github/rajeshsegu/tchannel-promise?branch=master)
+# tchannel-promise [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status](https://coveralls.io/repos/rajeshsegu/tchannel-promise/badge.svg?branch=master&service=github)](https://coveralls.io/github/rajeshsegu/tchannel-promise?branch=master)
 > tchannel promises
 
 ## Installation
