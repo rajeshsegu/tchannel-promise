@@ -29,7 +29,7 @@
   },
   "scripts": {
     "cover": "istanbul cover --report cobertura --report lcovonly --print detail tape -- test/*.tap.js",
-    "lint": "uber-standard **/*.js",
+    "lint": "uber-standard lib/*.js",
     "fast-test": "tape test/*.tap.js",
     "test": "npm run lint -s && npm run cover -s",
     "view-cover": "istanbul report html && opn ./coverage/index.html"
