@@ -1,19 +1,18 @@
 {
   "name": "tchannel-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "promisify tchannel",
-  "homepage": "",
-  "author": {
-    "name": "Rajesh Segu",
-    "email": "rajesh.segu@gmail.com",
-    "url": "https://www.npmjs.com/~rajeshsegu"
-  },
+  "homepage": "https://github.com/rajeshsegu/tchannel-promise#readme",
+  "author": "Rajesh Segu <rajesh.segu@gmail.com> (https://www.npmjs.com/~rajeshsegu)",
   "main": "index.js",
   "keywords": [
     "tchannel",
     "promise"
   ],
-  "repository": "rajeshsegu/tchannel-promise",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajeshsegu/tchannel-promise.git"
+  },
   "dependencies": {
     "assign": "^0.1.7",
     "bluebird": "^3.1.1",
@@ -33,5 +32,12 @@
     "fast-test": "tape test/*.tap.js",
     "test": "npm run lint -s && npm run cover -s",
     "view-cover": "istanbul report html && opn ./coverage/index.html"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/rajeshsegu/tchannel-promise/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "license": "MIT"
 }
