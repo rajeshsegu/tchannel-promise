@@ -1,0 +1,37 @@
+{
+  "name": "tchannel-promise",
+  "version": "1.0.0",
+  "description": "promisify tchannel",
+  "homepage": "",
+  "author": {
+    "name": "Rajesh Segu",
+    "email": "rajesh.segu@gmail.com",
+    "url": "https://www.npmjs.com/~rajeshsegu"
+  },
+  "main": "index.js",
+  "keywords": [
+    "tchannel",
+    "promise"
+  ],
+  "repository": "rajeshsegu/tchannel-promise",
+  "dependencies": {
+    "assign": "^0.1.7",
+    "bluebird": "^3.1.1",
+    "tchannel": "^3.6.2"
+  },
+  "devDependencies": {
+    "is-promise": "^2.1.0",
+    "istanbul": "^0.3.13",
+    "opn": "^3.0.2",
+    "scotch-tape": "^0.2.1",
+    "tape": "^4.0.0",
+    "uber-standard": "^5.1.0"
+  },
+  "scripts": {
+    "cover": "istanbul cover --report cobertura --report lcovonly --print detail tape -- test/*.tap.js",
+    "lint": "uber-standard **/*.js",
+    "fast-test": "tape test/*.tap.js",
+    "test": "npm run lint -s && npm run cover -s",
+    "view-cover": "istanbul report html && opn ./coverage/index.html"
+  }
+}

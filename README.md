@@ -1,0 +1,30 @@
+# tchannel-promise [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+> tchannel promises
+
+## Installation
+
+```sh
+$ npm install tchannel-promise --save
+```
+
+## Usage
+
+```js
+var TchannelPromise = require('tchannel-promise');
+
+var channel = new TChannelPromise(options);
+```
+
+## License
+
+ © [Rajesh Segu](https://www.npmjs.com/~rajeshsegu)
+
+
+[npm-image]: https://badge.fury.io/js/tchannel-promise.svg
+[npm-url]: https://npmjs.org/package/tchannel-promise
+[travis-image]: https://travis-ci.org/rajeshsegu/tchannel-promise.svg?branch=master
+[travis-url]: https://travis-ci.org/rajeshsegu/tchannel-promise
+[daviddm-image]: https://david-dm.org/rajeshsegu/tchannel-promise.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/rajeshsegu/tchannel-promise
+[coveralls-image]: https://coveralls.io/repos/rajeshsegu/tchannel-promise/badge.svg
+[coveralls-url]: https://coveralls.io/r/rajeshsegu/tchannel-promise
