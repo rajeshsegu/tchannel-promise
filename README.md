@@ -1,6 +1,8 @@
 # tchannel-promise [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage Status](https://coveralls.io/repos/rajeshsegu/tchannel-promise/badge.svg?branch=master&service=github)](https://coveralls.io/github/rajeshsegu/tchannel-promise?branch=master)
 > tchannel promises
 
+tchannel-promise wraps tchannel send() to return a bluebird promise. 
+
 ## Installation
 
 ```sh
@@ -13,15 +15,25 @@ $ npm install tchannel-promise --save
 var TchannelPromise = require('tchannel-promise');
 
 var tchannel = new TChannelPromise(options);
-var channel = tchannel.makeSubChannel({serviceName: 'test'});
-var promise = channel.request()
+
+var testChannel = tchannel
+      .makeSubChannel({serviceName: 'test'});
+
+var bluebirdPromise = testChannel
+	.request()
     .send('echo', 'arg1', 'arg2');
     
-promise    
-    .then(function success(result){
-      // implement success
-    }, function fail(err){
-      // implement failure
+bluebirdPromise    
+    .then(function onSuccess(result){
+      // handle successful result    
+      // result.response
+      // result.arg2
+      // result.arg3
+    }, function onFailure(err){
+      // handle error err
+    })
+    .catch(function onException(ex){
+      // handle exception ex
     });
 
 ```
