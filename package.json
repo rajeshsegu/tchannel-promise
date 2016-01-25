@@ -1,6 +1,6 @@
 {
   "name": "tchannel-promise",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "promisify tchannel",
   "homepage": "https://github.com/rajeshsegu/tchannel-promise#readme",
   "author": "Rajesh Segu <rajesh.segu@gmail.com> (https://www.npmjs.com/~rajeshsegu)",
@@ -16,6 +16,7 @@
   "dependencies": {
     "assign": "^0.1.7",
     "bluebird": "^3.1.1",
+    "clean-require": "^1.0.0",
     "tchannel": "^3.6.2"
   },
   "devDependencies": {
