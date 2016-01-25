@@ -1,6 +1,6 @@
 {
   "name": "tchannel-promise",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "promisify tchannel",
   "homepage": "https://github.com/rajeshsegu/tchannel-promise#readme",
   "author": "Rajesh Segu <rajesh.segu@gmail.com> (https://www.npmjs.com/~rajeshsegu)",
